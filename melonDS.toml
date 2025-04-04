@@ -1,6 +1,7 @@
 LastROMFolder = "C:/Users/Chris/Desktop/emulat"
 UITheme = ""
 RecentROM = [
+    "C:/Users/Chris/Desktop/emulat/4780 - Pokemon HeartGold (U)(Xenophobia).nds",
     "C:/Users/Chris/Desktop/emulat/0566 - Pokemon Mystery Dungeon - Blue Rescue Team (U)(Legacy).nds",
     "C:/Users/Chris/Documents/0566 - Pokemon Mystery Dungeon - Blue Rescue Team (U)(Legacy).nds",
 ]
@@ -11,17 +12,31 @@ TargetFPS = 60.0
 LimitFPS = true
 SlowmoFPS = 30.0
 
-[Mic]
-InputType = 1
-Device = "Microphone (Logitech G733 Gaming Headset)"
-WavPath = ""
+[DLDI]
+Enable = false
 
-[LAN]
-DirectMode = false
+[DSi]
+NANDPath = ""
 
-[MP]
-RecvTimeout = 25
-AudioMode = 1
+[DSi.Camera1]
+DeviceName = ""
+ImagePath = ""
+InputType = 0
+XFlip = false
+
+[DSi.Camera0]
+DeviceName = ""
+ImagePath = ""
+InputType = 0
+XFlip = false
+
+[Mouse]
+Hide = false
+HideSeconds = 5
+
+[Audio]
+Interpolation = 0
+BitDepth = 0
 
 [Instance0]
 EnableCheats = false
@@ -30,38 +45,44 @@ JoystickID = 0
 SavestatePath = ""
 CheatFilePath = ""
 
-[Instance0.Window1]
+[Instance0.Audio]
+DSiVolumeSync = false
+Volume = 49
+
+[Instance0.Window3]
 Enabled = false
 
-[Instance0.Firmware]
-Username = "melonDS"
-Language = 1
-FavouriteColour = 0
-BirthdayMonth = 1
-BirthdayDay = 1
-Message = ""
-MAC = ""
-
-[Instance0.RTC]
-Offset = 0
+[Instance0.Window0]
+Enabled = true
+ScreenFilter = false
+ScreenAspectTop = 0
+IntegerScaling = false
+ScreenSizing = 0
+ScreenSwap = false
+ScreenGap = 0
+ScreenAspectBot = 0
+ScreenRotation = 0
+ScreenLayout = 2
+Geometry = "AdnQywADAAAAAAAA////+AAAB38AAAQHAAALYgAAATEAAA1hAAACoQAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAQH"
+ShowOSD = true
 
 [Instance0.Window2]
 Enabled = false
 
 [Instance0.Keyboard]
-HK_FastForwardToggle = -1
-Start = -1
-HK_Pause = -1
-Right = -1
+HK_Lid = -1
+HK_FrameStep = -1
+Y = -1
+HK_SolarSensorIncrease = -1
+L = -1
+R = -1
 HK_FullscreenToggle = -1
 HK_SlowMo = -1
 Up = -1
-R = -1
-L = -1
-HK_SolarSensorIncrease = -1
-Y = -1
-HK_FrameStep = -1
-HK_Lid = -1
+HK_Pause = -1
+Right = -1
+Start = -1
+HK_FastForwardToggle = -1
 HK_SlowMoToggle = -1
 Select = -1
 X = -1
@@ -77,23 +98,23 @@ HK_SwapScreenEmphasis = -1
 HK_Reset = -1
 HK_PowerButton = -1
 HK_VolumeDown = -1
-HK_SolarSensorDecrease = -1
 HK_VolumeUp = -1
+HK_SolarSensorDecrease = -1
 
 [Instance0.Joystick]
-HK_FastForwardToggle = -1
-Start = 7
-HK_Pause = -1
-Right = 65794
+HK_Lid = -1
+HK_FrameStep = -1
+Y = 3
+HK_SolarSensorIncrease = -1
+L = 69337087
+R = 86114303
 HK_FullscreenToggle = -1
 HK_SlowMo = -1
 Up = 17891585
-R = 86114303
-L = 69337087
-HK_SolarSensorIncrease = -1
-Y = 3
-HK_FrameStep = -1
-HK_Lid = -1
+HK_Pause = -1
+Right = 65794
+Start = 7
+HK_FastForwardToggle = -1
 HK_SlowMoToggle = -1
 Select = 6
 X = 2
@@ -109,44 +130,38 @@ HK_SwapScreenEmphasis = -1
 HK_Reset = -1
 HK_PowerButton = -1
 HK_VolumeDown = -1
-HK_SolarSensorDecrease = -1
 HK_VolumeUp = -1
-
-[Instance0.Gdb]
-Enabled = false
-
-[Instance0.Gdb.ARM7]
-Port = 3334
-BreakOnStartup = false
-
-[Instance0.Gdb.ARM9]
-Port = 3333
-BreakOnStartup = false
-
-[Instance0.Window0]
-ShowOSD = true
-Geometry = "AdnQywADAAAAAAAA////+AAAB38AAAQHAAAFfwAAARsAAAd+AAACswAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAQH"
-ScreenLayout = 2
-ScreenRotation = 0
-ScreenAspectBot = 0
-ScreenGap = 0
-ScreenSwap = false
-ScreenSizing = 0
-IntegerScaling = false
-ScreenAspectTop = 0
-ScreenFilter = false
-Enabled = true
-
-[Instance0.Window3]
-Enabled = false
-
-[Instance0.Audio]
-Volume = 49
-DSiVolumeSync = false
+HK_SolarSensorDecrease = -1
 
 [Instance0.DS]
 [Instance0.DS.Battery]
 LevelOkay = true
+
+[Instance0.RTC]
+Offset = 0
+
+[Instance0.Gdb]
+Enabled = false
+
+[Instance0.Gdb.ARM9]
+BreakOnStartup = false
+Port = 3333
+
+[Instance0.Gdb.ARM7]
+BreakOnStartup = false
+Port = 3334
+
+[Instance0.Firmware]
+MAC = ""
+Message = ""
+BirthdayDay = 1
+BirthdayMonth = 1
+FavouriteColour = 0
+Language = 1
+Username = "melonDS"
+
+[Instance0.Window1]
+Enabled = false
 
 [3D]
 Renderer = 0
@@ -158,43 +173,29 @@ Threaded = true
 RelocSRAM = false
 
 [Emu]
-ConsoleType = 0
-ExternalBIOSEnable = false
 DirectBoot = true
+ExternalBIOSEnable = false
+ConsoleType = 0
+
+[MP]
+AudioMode = 1
+RecvTimeout = 25
+
+[LAN]
+DirectMode = false
+
+[JIT]
+Enable = false
+FastMemory = true
+BranchOptimisations = true
+LiteralOptimisations = true
+MaxBlockSize = 32
 
 [Screen]
 UseGL = false
 
-[JIT]
-MaxBlockSize = 32
-LiteralOptimisations = true
-BranchOptimisations = true
-FastMemory = true
-Enable = false
-
-[Audio]
-BitDepth = 0
-Interpolation = 0
-
-[Mouse]
-HideSeconds = 5
-Hide = false
-
-[DLDI]
-Enable = false
-
-[DSi]
-NANDPath = ""
-
-[DSi.Camera0]
-XFlip = false
-InputType = 0
-ImagePath = ""
-DeviceName = ""
-
-[DSi.Camera1]
-XFlip = false
-InputType = 0
-ImagePath = ""
-DeviceName = ""
+[Mic]
+WavPath = ""
+Device = "Microphone (Logitech G733 Gaming Headset)"
+InputType = 1
 
